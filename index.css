@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: black;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar{
+    display: flex;
+    list-style: none;
+}
+.navbar li a{
+    padding: 10px;
+    color: aliceblue;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+/*.navbar li a:hover{
+    background-color: aliceblue;
+    color: black;
+}*/
+.logo{
+    color: antiquewhite;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+span{
+    font-size: 32px;
+    color: gold;
+}
+.icon{
+    margin-right: 5rem;
+}
+.icon i{
+   color: aliceblue;
+}
+#menu-icon{
+    display: none;
+}
+/*search-form*/
+.search-form{
+    position: absolute;
+    top: -200rem;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+   
+}
+.search-form.active{
+    top: 0;
+    transition: 1s ease;
+}
+.search-form input{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    width: 60%;
+}
+.search-form ::placeholder{
+    color: black;
+}
+#closee{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+}
+.main-img img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.main-con{
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    color: white;
+}
+.main-con h3{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.main-con h1{
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.main-con h2{
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.main-con .btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.main-con .btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/*product*/
+.prodcut-con h2{
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.product-1{
+    display: flex;
+    gap: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+.prodcut-2{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.prodcut-2 img{
+    padding-left: 3rem;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.prodcut-2 h5{
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.prodcut-2 p{
+    text-align: center;
+    color: gray;
+}
+/*sec-product*/
+.sa-product{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sa-product-con{
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        padding: 10px;
+}
+.sa-product-con img{
+    padding-left: 3rem;
+        border-radius: 10px;
+        padding-top: 5px;
+}
+.sa-product-con h5{
+    text-align: center;
+        font-size: 20px;
+        color: gold;
+        letter-spacing: 2px;
+        font-weight: 200;
+        text-transform: capitalize;
+}
+.sa-product-con p{
+    text-align: center;
+        color: gray;
+}
+/*banner*/
+.banner{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.sa-banner{
+    border: 1px solid plum;
+    background-color: palevioletred;
+    width: 20%;
+    height: 17vh;
+    border-radius: 15px;
+}
+.sa-banner i{
+    color: black;
+    font-size: 30px;
+    background-color: aliceblue;
+    padding: 10px;
+    margin-left: 4rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.sa-banner h5{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    color: darkred;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+/*about*/
+.about{
+    margin-top: 5rem;
+}
+.about-con{
+    display: flex;
+    gap: 4rem;
+    margin-left: 8rem;
+    
+}
+.about-text{
+   width: 300px;
+   height: 200px;
+   background-color: gray;
+   padding: 5px;
+}
+.about-text p{
+    color: black;
+    text-align: center;
+    font-weight: 200;
+}
+.about-text h5{
+    text-align: center;
+    color: darkred;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 2px 2px;
+}
+.about-text h2{
+    color: aliceblue;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.slider{
+    width: 300px;
+    height: 200px;
+    background-image: url(images/4th.png);
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    10%{
+        background-image: url(images/1st.png);
+        border: 5px solid black;
+    }
+     30% {
+             background-image: url(images/2nd.png);
+         }
+    70% {
+              background-image: url(images/3rd.png);
+       }
+
+     90% {
+             background-image: url(images/5th.png);
+         }
+}
+/*contact*/
+.contact{
+    margin-top: 7rem;
+}
+.contact-us{
+    margin-top: 1rem;
+    text-align: center;
+}
+.contact-us h4{
+    font-size: 29px;
+    color: darkred;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.contact-us p{
+    color: black;
+    letter-spacing: 2px;
+}
+.contact-con{
+    display: flex;
+    margin-left: 25rem;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+.contact-sa input{
+ display: flex;
+ 
+}
+.contacts i{
+    background-color: rgb(224, 221, 6);
+    color: black;
+    padding: 5px;
+    margin-top: 5px;
+}
+.contacts h5{
+    color: black;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.contacts p{
+    font-size: 15px;
+    color: darkred;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.contact-sa{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact-sa input{
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+}
+.contact-sa button{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    padding: 5px;
+    margin-top: 1rem;
+}
+.credit{
+    background-color: gray;
+    margin-top: 1rem;
+    padding: 5px;
+}
+.credit h5{
+    color: gold;
+    font-size: 17px;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.credit h6{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 800px){
+    header{
+        width: 100%;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -220rem;
+        flex-direction: column;
+        width: 35%;
+        height: 100vh;
+        background-color: rgb(46, 48, 49);
+        padding: 5px 10px;
+        z-index: 2;
+        
+    }
+    .navbar.active{
+        left: 0;
+    }
+    .navbar li a{
+        margin-top: 2rem;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 2;
+    }
+    .navbar li{
+        margin-top: 1rem; 
+    }
+    .navbar li:hover{
+        background-color: aliceblue;
+        color: black;
+        padding: 2px 2px;
+        border-radius: 10px;
+    }
+    .search-form input{
+        position: absolute;
+        top: 10rem;
+        left: 10px;
+    }
+   
+    .logo{
+        font-size: 20px;
+    }
+    .icon{
+        margin-left: 3rem;
+        display: flex;
+    }
+    .icon i{
+        padding-left: 15px;
+    }
+    .main-img img{
+        width: 100%;
+        height: 100vh;
+    }
+    .main-con{
+        position: absolute;
+        top: 10rem;
+        left: 10px;
+        color: white;
+    }
+    .main-con h1{
+        font-weight: 200;
+        letter-spacing: 2;
+        font-size: 35px;
+    }
+    .main-con h2{
+        letter-spacing: 2;
+        font-weight: 200;
+    }
+    .main-con h3{
+        font-size: 40px;
+        font-weight: 200;
+        letter-spacing: 2px;
+       
+    }
+    .btn{
+        background-color: transparent;
+        color: white;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-weight: 200;
+    }
+    /*product*/
+    .product{
+        margin-top: 5rem;
+    }
+    .product-1{
+        margin-top: 4rem;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .prodcut-2 img{
+     padding-left: 20px;
+     
+    }
+    /*sec product*/
+    .sa-product{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .sa-product-con img{
+        padding-left: 20px;
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .sa-banner{
+        width: 100%;
+        height: 20vh;
+    }
+    .sa-banner:hover{
+        background-color: aqua;
+    }
+    .sa-banner i{
+        margin-left: 7rem;
+    }
+    /*about*/
+    .about-con{
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .slider{
+        margin-left: 5px;
+        width: 300px;
+    }
+    /*contact*/
+    .contact-con1 i{
+        border-radius: 50%;
+    }
+    .contact-con1 i:hover{
+        background-color: darkred;
+        color: white;
+    }
+    .contact-con{
+        margin-left: 1px;
+        flex-direction: column;
+    }
+    .contact-con1{
+        margin-left: 10px;
+    }
+    .contact-sa input{
+        margin-left: 4rem;
+    }
+    .contact-sa button{
+        margin-left: 4rem;
+    }
+
+    
+}
